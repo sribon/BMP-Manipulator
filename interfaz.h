@@ -7,7 +7,7 @@
 
 #include "tipos.h"
 #include "bmp_io.h"
-#include "funciones.h"
+#include "filtros.h"
 
 int solucion(int argc, char* argv[]);
 
