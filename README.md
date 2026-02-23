@@ -59,11 +59,31 @@ Ese llamado debería generar los archivos:
 
 El argumento --negativo aparece dos veces, deberá ejecutarse sólo una. El argumento incorrecto no deberá generar ningún archivo ni abordar la ejecución del programa. Pero sí informar el error en pantalla. Todas las modificaciones deben hacerse sobre los archivos previamente mencionados, y no en el main.
 
+## 🧩 Decisiones de diseño
+
++ Uso de memoria dinámica para matriz de píxeles.
+
++ No se realizan transformaciones dentro de main.
+
++ Validaciones exhaustivas antes de procesar datos.
+
++ Manejo manual de padding para respetar especificación BMP.
+
++ Modularización del proyecto:
+  + "tipos.h": definición de estructuras y macros.
+  + "bmp_io.h": lectura y escritura de archivos BMP, gestión de memoria dinámica y reconstrucción de headers.
+  + "funciones.h": implementación de filtros y transformaciones sobre la matriz de píxeles.
+  + "interfaz.h": gestión de la interacción del usuario y validación de los argumentos enviados por línea de consola.
+
 ## 👨‍💻 Autor
 **Santiago Ribon**<br> 
 *Estudiante Ingenieria en informática, UNLaM*
-
-<a href="https://www.linkedin.com/in/santiago-ribon/">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/3840px-LinkedIn_icon.svg.png" width=30px>
-</a>
+<p align = center>
+  <a href="https://www.linkedin.com/in/santiago-ribon/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/3840px-LinkedIn_icon.svg.png" width=30px>
+  </a>
+  <a href="https://github.com/TU-USUARIO-GITHUB" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="35" height="35">
+  </a>
+</p>
 
