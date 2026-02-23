@@ -36,10 +36,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="bmp_io.h" />
-		<Unit filename="funciones.c">
+		<Unit filename="filtros.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="funciones.h" />
+		<Unit filename="filtros.h" />
 		<Unit filename="interfaz.c">
 			<Option compilerVar="CC" />
 		</Unit>
