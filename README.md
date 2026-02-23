@@ -70,14 +70,20 @@ El argumento --negativo aparece dos veces, deberá ejecutarse sólo una. El argu
 + Manejo manual de padding para respetar especificación BMP.
 
 + Modularización del proyecto:
-  + "tipos.h": definición de estructuras y macros.
-  + "bmp_io.h": lectura y escritura de archivos BMP, gestión de memoria dinámica y reconstrucción de headers.
-  + "funciones.h": implementación de filtros y transformaciones sobre la matriz de píxeles.
-  + "interfaz.h": gestión de la interacción del usuario y validación de los argumentos enviados por línea de consola.
+  + "tipos.h": definición de las estructuras fundamentales (t_pixel, t_metadata) y macros (TODO_OK, códigos de error).
+  + "bmp_io.h": contiene las funciones de lectura y escritura de archivos BMP, gestión de memoria dinámica y reconstrucción de encabezados.
+  + "funciones.h": contiene las funciones encargadas de las transformaciones y filtros aplicables a la imagen.
+  + "interfaz.h": gestión de la validación e interacción del usuario a través de los argumentos enviados por línea de consola.
+
+## 📜 Licencia
+
+Este proyecto se distribuye bajo la licencia **MIT**.
+
+Para más detalles, consultar el archivo [LICENSE.md](LICENSE.md).
 
 ## 👨‍💻 Autor
 **Santiago Ribon**<br> 
-*Estudiante Ingenieria en informática, UNLaM*
+*Estudiante Ingeniería en informática, UNLaM*
 <p align = center>
   <a href="https://www.linkedin.com/in/santiago-ribon/" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/3840px-LinkedIn_icon.svg.png" width=30px>
