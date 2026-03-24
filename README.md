@@ -1,9 +1,9 @@
-# 🖼️ Manipulación de imágenes bmp
+# Manipulación de imágenes bmp
 
 Se solicita realizar un programa en lenguaje C llamado bmpmanipulator, que a partir de un archivo BMP de 24 bits de profundidad genere otro archivo BMP con las modificaciones solicitadas como argumentos a main. 
 
 
-### 📌 Ejemplo
+### Ejemplo
 > bmpmanipuleitor.exe --negativo imagen.bmp
 
 Debe generar un archivo llamado *"negativo_imagen.bmp"* que contenga la misma imagen, pero con los colores invertidos.
@@ -43,12 +43,12 @@ Estas últimas siete funcionalidades requieren que el porcentaje llegue como arg
 ***--comodin*** // una funcionalidad nueva, decidida por el grupo (no se puede repetir con alguna de las solicitadas previamente en el TP).
 
 
-## 🛡️ Validaciones y manejo de errores
+## Validaciones y manejo de errores
 Los argumentos pueden enviarse de a uno, o de a varios, de modo que, en un solo llamado al programa, ejecute todas las modificaciones y genere todos los archivos necesarios. Si un parámetro es incorrecto, el error debe ser informado por consola, y ejecutar todos los otros filtros.
 
 Si algún comando no pudiese ejecutarse, debe informarse el motivo (por ejemplo: no se pueden concatenar las imágenes porque sólo se haya enviado una por argumentos, archivo no encontrado, etc).
 
-### 📌 Ejemplo completo
+### Ejemplo completo
 Un llamado válido al programa podría ser:
 >bmpmanipuleitor.exe --negativo unlam.bmp --escala-de-grises --argumento-incorrecto-que-debera-ser-ignorado --aumentar-contraste=18 --negativo 
 
@@ -59,7 +59,7 @@ Ese llamado debería generar los archivos:
 
 El argumento --negativo aparece dos veces, deberá ejecutarse sólo una. El argumento incorrecto no deberá generar ningún archivo ni abordar la ejecución del programa. Pero sí informar el error en pantalla. Todas las modificaciones deben hacerse sobre los archivos previamente mencionados, y no en el main.
 
-## 🧩 Decisiones de diseño
+## Decisiones de diseño
 
 + Uso de memoria dinámica para matriz de píxeles.
 
@@ -75,13 +75,13 @@ El argumento --negativo aparece dos veces, deberá ejecutarse sólo una. El argu
   + "funciones.h": contiene las funciones encargadas de las transformaciones y filtros aplicables a la imagen.
   + "interfaz.h": gestión de la validación e interacción del usuario a través de los argumentos enviados por línea de consola.
 
-## 📜 Licencia
+## Licencia
 
 Este proyecto se distribuye bajo la licencia **MIT**.
 
 Para más detalles, consultar el archivo [LICENSE.md](LICENSE.md).
 
-## 👨‍💻 Autor
+## Autor
 **Santiago Ribon**<br> 
 *Estudiante Ingeniería en informática, UNLaM*
 <p align = center>
